@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">Revionix</span>
+                    <span class="logo-text-dark">Homeo</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="about.html">About Us</a>
+                <a href="index.html/#approach">treatments</a>
+                <a href="blog.html">Blogs</a>
+                <a href="faq.html">FAQ</a>
+                <a href="index.htrml/#contact">Contact</a>
+                <div class="profile-container">
+                    <img src="images/profile-icon.png" alt="User Profile" id="profileBtn">
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <a href="login.html"> 🔑 Login</a>
+                        <a href="register.html"> 📝 Register</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<div class="profile-container">
+    <h1><br></h1>
+    <h1>Patient Profile</h1>
+
+    <!-- User Information Section -->
+    <section class="user-info">
+        <h2>User Information</h2>
+            <div class="profile-item">
+                <label>First Name:</label>
+                <span id="firstName">John</span>
+            </div>
+            <div class="profile-item">
+                <label>Last Name:</label>
+                <span id="lastName">Doe</span>
+            </div>
+            <div class="profile-item">
+                <label>Phone Number:</label>
+                <span id="phoneNumber">+1234567890</span>
+            </div>
+            <div class="profile-item">
+                <label>Email:</label>
+                <span id="email">john.doe@example.com</span>
+            </div>
+            <div class="profile-item">
+                <label>Password:</label>
+                <input type="password" id="password" value="password123" disabled>
+                <button id="togglePassword">Show</button>
+            </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="dynamic-section">
+        <h2>Reviews</h2>
+            <div id="reviews">
+                <p>You haven't given any reviews yet!</p>
+            </div>
+    </section>
+
+    <!-- Appointments Section -->
+    <section class="dynamic-section">
+        <h2>Appointments</h2>
+            <div id="appointments">
+            <p>No appointments booked yet!</p>
+        </div>
+    </section>
+
+    <!-- Questions Asked Section -->
+    <section class="dynamic-section">
+        <h2>Questions Asked</h2>
+            <div id="questions">
+                <p>You haven't asked any questions yet!</p>
+            </div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
