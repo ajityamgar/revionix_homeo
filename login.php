@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 include "db.php";
 session_start();
@@ -39,3 +40,16 @@ if ($email === "test@example.com" && $password === "123456") {
 
 echo json_encode($response);
 ?>
+=======
+<?php
+header('Content-Type: application/json');
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+if ($email == "test@example.com" && $password == "123456") {
+    echo json_encode(["status" => "success", "message" => "✅ Login Successful! Redirecting..."]);
+} else {
+    echo json_encode(["status" => "error", "message" => "❌ Invalid Email or Password!"]);
+}
+?>
+>>>>>>> 5acc803 (Updated files)

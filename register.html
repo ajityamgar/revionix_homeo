@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,3 +99,108 @@
     <script src="script.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+        }
+        .popup-content {
+            text-align: center;
+        }
+        .close-popup {
+            cursor: pointer;
+            float: right;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">Revionix</span>
+                    <span class="logo-text-dark">Homeo</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="about.html">About Us</a>
+                <a href="#approach">Treatments</a>
+                <a href="blog.html">Blogs</a>
+                <a href="faq.html">FAQ</a>
+                <a href="#contact">Contact</a>
+                <a href="appointment.html" class="btn-primary">Book Appointment</a>
+
+                <div class="profile-container">
+                    <img src="images/profile-icon.png" alt="Profile" id="profileIcon" class="profile-icon">
+                    <div id="profileDropdown" class="dropdown-menu">
+                        <a href="login.html">🔑 Login</a>
+                        <a href="register.html">📝 Register</a>
+                        <a href="profile.html">👤 Profile</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="register-container">
+        <h2>Register</h2>
+        <form id="registrationForm" class="contact-form">
+            <div class="info-item">
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+            </div>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <div class="form-group password-group">
+                <input type="password" name="password" placeholder="Password" id="password" required>
+                <span class="toggle-password" onclick="togglePassword('password')"></span>
+            </div>
+            <div class="form-group password-group">
+                <input type="password" name="confirm_password" placeholder="Confirm Password" id="confirmPassword" required>
+                <span class="toggle-password" onclick="togglePassword('confirmPassword')"></span>
+            </div>
+            <button type="submit" class="btn-primary">Submit</button>
+        </form>
+        <center><p>Already have an account? <a href="login.html">Login here</a></p></center>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <p id="popup-message"> 
+                Message will appear here!
+            </p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> 5acc803 (Updated files)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -91,3 +92,98 @@
     <script src="script.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">Revionix</span>
+                    <span class="logo-text-dark">Homeo</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="about.html">About Us</a>
+                <a href="#approach">Treatments</a>
+                <a href="blog.html">Blogs</a>
+                <a href="faq.html">FAQ</a>
+                <a href="#contact">Contact</a>
+                <a href="appointment.html" class="btn-primary">Book Appointment</a>
+
+                <div class="profile-container">
+                    <img src="images/profile-icon.png" alt="Profile" id="profileIcon" class="profile-icon">
+                    <div id="profileDropdown" class="dropdown-menu">
+                        <a href="login.html">🔑 Login</a>
+                        <a href="register.html">📝 Register</a>
+                        <a href="profile.html">👤 Profile</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+<div class="appointment">
+    <div class="appoinment-container">
+        <h2>Book an Appointment</h2>
+        <p>Select your preferred appointment type and schedule a consultation.</p>
+        
+        <form action="book_appointment.php" method="post" class="appoinment-form">
+            <!-- Step 1: Select Appointment Type -->
+            <div class="step" id="step1">
+                <h3>Select Appointment Type</h3>
+                <div class="form-row">
+                    <label>
+                        <input type="radio" name="appointment_type" value="online" required>
+                        Online Appointment
+                    </label>
+    
+                    <label>
+                        <input type="radio" name="appointment_type" value="offline">
+                        Offline Appointment
+                    </label>
+                </div>
+                <button type="button" class="btn-primary" onclick="nextStep(2)">Next</button>
+            </div>
+            
+            <!-- Step 2: Select Date & Time -->
+            <div class="step" id="step2" style="display: none;">
+            <h3>Select Date & Time</h3>
+            <div class="form-row">
+                <input type="date" required><br>
+                <input type="time" required><br>
+            </div><br>
+            <button type="button" class="btn-primary" onclick="prevStep(1)">Back</button>
+            <button type="button" class="btn-primary" onclick="nextStep(3)">Next</button>
+            </div>
+            
+            <!-- Step 3: Personal Information -->
+         <div class="step" id="step3" style="display: none;">
+            <h3>Personal Information</h3>
+            <div class="info-item">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+            </div>
+            <div class="form-row">
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone Number" required>
+            </div>
+            <div class="form-row">
+                <textarea placeholder="Message" required></textarea>
+            </div><br>
+            <button type="button" class="btn-primary" onclick="prevStep(2)">Back</button>
+            <button type="submit" class="btn-primary">Confirm Booking</button>
+         </div>
+        </form>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> 5acc803 (Updated files)
